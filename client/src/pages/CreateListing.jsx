@@ -48,9 +48,10 @@ export default function CreateListing() {
             imageUrls: formData.imageUrls.concat(urls),
           });
           setImageUploadError(false);
-          setUploading(false);
+          setUploading(false);console.log(uploading)
         })
         .catch((err) => {
+       
           setImageUploadError('Image upload failed (2 mb max per image)');
           setUploading(false);
         });
